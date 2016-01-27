@@ -1,0 +1,25 @@
+.landing-section {
+  background-color: #28669F;
+  height: 100vh;
+}
+
+.about-section {
+  padding: 200px 0;
+}
+
+.work-section {
+  padding: 200px 0;
+}
+
+.work-one {
+  background-color: #8f76e0;
+}
+
+.work-two {
+  background-color: #232c39;
+  color: white;
+}
+
+.work-three {
+  background-color: #0098b4;
+}
