@@ -1,28 +1,18 @@
 <?php
-	/**
-	 * GIT DEPLOYMENT SCRIPT
-	 *
-	 * Used for automatically deploying websites via github or bitbucket, more deets here:
-	 *
-	 *		https://gist.github.com/1809044
-	 */
-	// The commands
-	$commands = array(
-		'echo $PWD',
-		'whoami',
-		'git pull',
-		'git status',
-		'git submodule sync',
-		'git submodule update',
-		'git submodule status',
-	);
-	// Run the commands for output
-	$output = '';
-	foreach($commands AS $command){
-		// Run it
-		$tmp = shell_exec($command);
-		// Output
-		$output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
-		$output .= htmlentities(trim($tmp)) . "\n";
-	}
-?>
+
+// Init vars
+$LOCAL_ROOT         = "/var/www/my_new_site";
+$LOCAL_REPO_NAME    = "public_html";
+$LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
+$REMOTE_REPO        = "git@github.com:jonathanstark/my_new_site.git";
+$DESIRED_BRANCH     = "dev";
+
+// Delete local repo if it exists
+if (file_exists($LOCAL_REPO)) {
+    shell_exec("rm -rf {$LOCAL_REPO}");
+}
+
+// Clone fresh repo from github using desired local repo name and checkout the desired branch
+echo shell_exec("cd {$LOCAL_ROOT} && git clone {$REMOTE_REPO} {$LOCAL_REPO_NAME} && cd {$LOCAL_REPO} && git checkout {$BRANCH}");
+
+die("done " . mktime());
