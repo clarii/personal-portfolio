@@ -2,7 +2,10 @@
   background-color: #28669F;
   height: 100vh;
   position: relative;
-  background-image: image(startup-1.jpg);
+}
+
+.landing-section h1 {
+  color: #fff;
 }
 
 .about-section {
