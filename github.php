@@ -1,11 +1,11 @@
 <?php
 
 // Init vars
-$LOCAL_ROOT         = "/var/www/my_new_site";
-$LOCAL_REPO_NAME    = "public_html";
+$LOCAL_ROOT         = "/public_html/kanemontreuil.com/subdomains/dev";
+$LOCAL_REPO_NAME    = "personal-portfolio";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
-$REMOTE_REPO        = "git@github.com:jonathanstark/my_new_site.git";
-$DESIRED_BRANCH     = "dev";
+$REMOTE_REPO        = "git@github.com:kanemontreuil/personal-portfolio.git";
+$DESIRED_BRANCH     = "master";
 
 // Delete local repo if it exists
 if (file_exists($LOCAL_REPO)) {
