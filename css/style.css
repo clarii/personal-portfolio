@@ -2,6 +2,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
 header {
   height: 100vh;
 }
@@ -21,7 +22,7 @@ h1, h2, h4, h6, p, ul {
 h1 {
   margin-top: 30vh;
   font-size: 5em;
-  line-height: 66px;
+  line-height: 80px;
 }
 
 h2 {
@@ -49,6 +50,20 @@ p {
 header {
   background-color: #28669F;
   color: #fff;
+}
+
+header a {
+  color: rgba(255,255,255,.9);
+}
+
+header a:hover {
+  color: rgba(255,255,255,.25);
+  text-decoration: none;
+}
+
+header a:visited {
+  color: rgba(255,255,255,.9);
+  text-decoration: none;
 }
 
 .about {
@@ -101,4 +116,45 @@ footer {
 header h1,
 header ul {
   text-align: center;
+}
+
+/* Button Styles */
+.btn {
+ border: 1px solid rgba(0,0,0,.75);
+ font-size: 17px;
+ padding: 7px 12px;
+ font-weight: normal;
+ margin: 6px 0;
+ display: inline-block;
+ margin-right: 12px;
+ text-decoration: none;
+ min-width: 120px;
+}
+
+.btn:focus {
+  outline:0;
+}
+
+.btn-dark {
+ background: rgba(0,0,0,0);
+ color: rgba(0,0,0,.75);
+ border: 1px solid rgba(0,0,0,.75);
+}
+
+.btn-dark:hover, .btn-dark:active {
+  background: rgba(0,0,0,0);
+  color: rgba(0,0,0,1);
+  border: 1px solid rgba(0,0,0,1);
+}
+
+.btn-light {
+ background: rgba(0,0,0,0);
+ color: rgba(255,255,255,.75);
+ border: 1px solid rgba(255,255,255,.75);
+}
+
+.btn-light:hover, .btn-light:active {
+  background: rgba(0,0,0,0);
+  color: rgba(255,255,255,1);
+  border: 1px solid rgba(255,255,255,1);
 }
