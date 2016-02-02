@@ -1,8 +1,8 @@
 <?php
 
 // Init vars
-$LOCAL_ROOT         = "/public_html/kanemontreuil.com/subdomains/dev";
-$LOCAL_REPO_NAME    = "personal-portfolio";
+$LOCAL_ROOT         = "/public_html/kanemontreuil.com/subdomains/";
+$LOCAL_REPO_NAME    = "dev";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:kanemontreuil/personal-portfolio.git";
 $DESIRED_BRANCH     = "master";
