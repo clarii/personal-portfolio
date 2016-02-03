@@ -12,7 +12,7 @@ section {
 }
 
 footer {
-  padding: 140px 0 200px;
+  padding: 50px 0 20px; /*140px 0 200px*/
 }
 
 h1, h2, h4, h6, p, ul {
